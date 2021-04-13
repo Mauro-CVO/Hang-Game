@@ -7,8 +7,18 @@ def run():
     #for v,k in nat_nums.items():
     #    print(v, '^2:', k)
 
+    # version del profesor
+    #my_dict = {}
+    #for i in range(1, 101):
+    #    my_dict[i] = i ** 3
+    #print(my_dict)
 
-
+    #RETO
+    my_dict = {}
+    for i in range(1, 101):
+        if i%3 != 0:
+            my_dict[i] = i ** 3
+    print(my_dict)
 
 if __name__ == '__main__':
     run()
