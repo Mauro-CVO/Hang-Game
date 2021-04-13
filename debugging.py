@@ -1,5 +1,5 @@
 def divisors(num):
-    divisors = [i for i in range(1, num + 1) if num % i == 1]
+    divisors = [i for i in range(1, num + 1) if num % i == 0]
     return(divisors)
 
 def run():
