@@ -75,8 +75,7 @@ def dashes(dashes_n,order_letter,word_2_list):
         for j in range(len(order_letter)):
             if i == order_letter[j]:
                 dashes_n[i]=word_2_list[i]
-
-    return(dashes_n)
+    return dashes_n 
 
 def juego(lifes, word_choosed, count):
     dashes_n = to_list("_" *len(word_choosed))
@@ -94,17 +93,13 @@ def juego(lifes, word_choosed, count):
             print("Hasta la proxima")
             break
         letter_finded = find_letter(letter, word_lst)
+        lifes = letter_finded
         dashes_n = dashes(dashes_n, letter_finded, word_lst)
         
-
     clean()
     print(to_str(dashes_n), "Bien Hecho")
-    return
-
+    return count = count + 1
     
-
-
-
 def run():
 
 
