@@ -6,19 +6,16 @@ class Usuario:
         self.name = name
 
     def user_name (self):
-        lst = []
-        lst.append(self.name)
         count = 0
         #print('lst',lst)
         with open("./usuarios.txt", 'r+', encoding="utf-8") as f:
-            for line[:5] in f:
+            for line in f:
                 #print(line)
                 if line.strip() == self.name:
                     count = 1
             if count == 1:
                 print('already', self.name)
-            else:
-                #f.write("\n")
+            else :
                 f.write(self.name)
                 f.write("\n")
                 print('new name', self.name)
@@ -28,6 +25,7 @@ class Usuario:
     
     def gain_lifes(self):
         vida = vida + 1
+        print(vida)
 
     def score(self):
         pass
@@ -51,14 +49,15 @@ def random_words():
 
 def run():
     os.system('clear')
-    name = input('Enter your name: ').upper
+    nm = input('Enter your name: ')
     assert len(nm) < 7, "Name can't be more than 6 character length"
     
-    user = Usuario(name)
+    user = Usuario(nm.upper())
     user.user_name()
 
     x = random_words ()
     w = choose_word(x)
+
     
 
 run()
