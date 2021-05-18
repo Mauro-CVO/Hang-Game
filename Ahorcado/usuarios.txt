@@ -1,0 +1,8 @@
+MAU
+AURORA
+<built-in method upper of str object at 0x012B4CE0>
+<built-in method upper of str object at 0x02A54CE0>
+<built-in method upper of str object at 0x030C3CE0>
+mau
+LUIS
+KAKARO
